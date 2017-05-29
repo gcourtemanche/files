@@ -1,0 +1,13 @@
+[user]
+	name = Gabriel Courtemanche
+	email = gabriel.courtemanche@shopify.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	fci = !git add . && git commit -m 'WIP'
+	fpush = push --force
+	squash = "!f() { git reset --soft HEAD~2 && git commit -m \"$(git log --format=%B --reverse HEAD..HEAD@{2})\"; }; f"
+[push]
+	default = current
