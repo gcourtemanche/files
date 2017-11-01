@@ -9,5 +9,6 @@
 	fci = !git add . && git commit -m 'WIP'
 	fpush = push --force
 	squash = "!f() { git reset --soft HEAD~2 && git commit -m \"$(git log --format=%B --reverse HEAD..HEAD@{2})\"; }; f"
+	fix = !git fci && git squash && git fpush
 [push]
 	default = current
