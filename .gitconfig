@@ -12,3 +12,5 @@
 	fix = !git fci && git squash && git fpush
 [push]
 	default = current
+[core]
+	excludesfile = /Users/gabriel/.gitignore_global
